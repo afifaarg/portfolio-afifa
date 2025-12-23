@@ -1,12 +1,12 @@
 export default function AboutMe() {
   return (
     <div
-      className="min-h-screen flex items-center justify-center text-greyText py-8  px-4"
+      className="min-h-screen flex items-center justify-center text-greyText py-8 px-4"
       id="aboutMe"
     >
-      <div className="flex flex-col items-center text-greyText w-3/4  mx-auto">
+      <div className="flex flex-col items-center text-greyText w-3/4 mx-auto">
         {/* Title Section */}
-        <div className="flex flex-col sm:flex-row items-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
           <div className="h-px bg-gray-100 w-16 sm:w-36"></div>
           <h1 className="text-[#6effe2dc] font-bold text-2xl sm:text-3xl">
             About Me
@@ -15,90 +15,92 @@ export default function AboutMe() {
         </div>
 
         {/* Content Section */}
-        <div className="text-left space-y-6 mt-6 sm:mt-8 px-2">
-          <h1 className="text-md sm:text-lg font-bold">Hi, I’m Afifa Argoub</h1>
-
-          {/* Introduction Paragraphs */}
-          <div className="space-y-3 text-sm sm:text-base text-[#B0BEC5]">
-            <p>
-              <span className="pr-2 font-bold text-[#6EFFE1]">></span>I
-              graduated from the{" "}
-              <span className="italic text-[#6EFFE1]">
-                University of Science and Technology Houari Boumedienne
-              </span>{" "}
-              with a{" "}
-              <span className="italic text-[#6EFFE1]">Master's degree</span> in{" "}
-              <span className="italic text-[#6EFFE1]">
-                Software Engineering
-              </span>
-              .
-            </p>
-            <p>
-              <span className="pr-2 font-bold text-[#6EFFE1]">></span>I worked
-              for <span className="italic text-[#6EFFE1]">1.5 years</span> as a{" "}
-              <span className="italic text-[#6EFFE1]">
-                Full Stack Developer
-              </span>{" "}
-              in a company, where I gained valuable experience in{" "}
-              <span className="italic text-[#6EFFE1]">teamwork</span> and
-              collaboration with different departments.
-            </p>
-            <p>
-              <span className="pr-2 font-bold text-[#6EFFE1]">></span>
-              As a{" "}
-              <span className="italic text-[#6EFFE1]">freelance developer</span>
-              , I created various side projects that further expanded my
-              knowledge and skills.
-            </p>
-            <p>
-              <span className="pr-2 font-bold text-[#6EFFE1]">></span>
-              Recently, I created a comprehensive{" "}
-              <span className="italic text-[#6EFFE1]">
-                web development course
-              </span>{" "}
-              for <span className="italic text-[#6EFFE1]">beginners</span>,
-              helping them get started with HTML, CSS, JavaScript and responsive
-              design.
-            </p>
+        <div className="w-full max-w-4xl">
+          {/* Experience Overview */}
+          <div className="bg-[#011d38] border border-gray-800 rounded-xl p-6 mb-8 hover:border-[#6effe270] transition-all duration-300">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center mb-6">
+              <div className="p-4">
+                <div className="text-3xl font-bold text-[#6EFFE1]">3+</div>
+                <div className="text-sm text-gray-300 mt-2">Years in Tech</div>
+              </div>
+              <div className="p-4">
+                <div className="text-3xl font-bold text-[#6EFFE1]">2+</div>
+                <div className="text-sm text-gray-300 mt-2">Corporate Experience</div>
+              </div>
+              <div className="p-4">
+                <div className="text-3xl font-bold text-[#6EFFE1]">10+</div>
+                <div className="text-sm text-gray-300 mt-2">Projects Delivered</div>
+              </div>
+            </div>
           </div>
 
-          {/* Technologies Section */}
-          <p className="text-sm sm:text-base text-[#B0BEC5]">
-            <span className="pr-2 font-bold text-[#6EFFE1]">></span>
-            Technologies I work with:
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 text-[#B0BEC5]">
-            <ul className="list-disc list-inside space-y-1 text-[#6EFFE1]">
-              <li>
-                <span className="italic">Django</span>
-              </li>
-              <li>
-                <span className="italic">TailwindCSS</span>
-              </li>
-            </ul>
-            <ul className="list-disc list-inside space-y-1 text-[#6EFFE1]">
-              <li>
-                <span className="italic">ReactJS</span>
-              </li>
-              <li>
-                <span className="italic">WordPress</span>
-              </li>
-              <li>
-                <span className="italic">AlpineJS</span>
-              </li>
-            </ul>
-          </div>
+          {/* Introduction */}
+          <div className="space-y-6">
+            {/* Professional Journey */}
+            <div className="space-y-4">
+              <h2 className="text-xl font-bold text-white">My Journey</h2>
+              
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="text-[#6EFFE1] font-bold mr-3 mt-1">→</div>
+                  <p className="text-gray-300">
+                    Master's graduate in Software Engineering from the University of Science and Technology Houari Boumedienne, with over <span className="text-[#6EFFE1] font-medium">3 years</span> of hands-on development experience.
+                  </p>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="text-[#6EFFE1] font-bold mr-3 mt-1">→</div>
+                  <p className="text-gray-300">
+                    <span className="text-[#6EFFE1] font-medium">2+ years</span> of corporate experience building enterprise systems including ERP, CRM solutions, and contributing to government platforms at the National Agency of Employment.
+                  </p>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="text-[#6EFFE1] font-bold mr-3 mt-1">→</div>
+                  <p className="text-gray-300">
+                    Extensive freelance experience developing e-commerce platforms, educational websites, and custom solutions for diverse clients while creating comprehensive web development courses for beginners.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          {/* Final Message */}
-          <div className="border-l-4 pl-2 mt-4 border-[#6EFFE1] text-sm sm:text-base text-[#B0BEC5]">
-            <p>
-              I'm continuously learning and evolving to stay on the cutting edge
-              of{" "}
-              <span className="italic text-[#6EFFE1]">
-                web development technologies
-              </span>
-              !
-            </p>
+            {/* Technical Expertise */}
+            <div className="space-y-4 pt-6">
+              <h2 className="text-xl font-bold text-white">Technical Expertise</h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="space-y-3">
+                  <h3 className="text-[#6EFFE1] font-medium">Frontend</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-[#6effe215] text-[#6EFFE1] px-3 py-1 rounded-full text-sm">React.js</span>
+                    <span className="bg-[#6effe215] text-[#6EFFE1] px-3 py-1 rounded-full text-sm">TailwindCSS</span>
+                    <span className="bg-[#6effe215] text-[#6EFFE1] px-3 py-1 rounded-full text-sm">JavaScript</span>
+                    <span className="bg-[#6effe215] text-[#6EFFE1] px-3 py-1 rounded-full text-sm">AlpineJS</span>
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  <h3 className="text-[#6EFFE1] font-medium">Backend</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-[#6effe215] text-[#6EFFE1] px-3 py-1 rounded-full text-sm">Django</span>
+                    <span className="bg-[#6effe215] text-[#6EFFE1] px-3 py-1 rounded-full text-sm">.NET</span>
+                    <span className="bg-[#6effe215] text-[#6EFFE1] px-3 py-1 rounded-full text-sm">Python</span>
+                    <span className="bg-[#6effe215] text-[#6EFFE1] px-3 py-1 rounded-full text-sm">REST API</span>
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  <h3 className="text-[#6EFFE1] font-medium">Databases & Tools</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-[#6effe215] text-[#6EFFE1] px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                    <span className="bg-[#6effe215] text-[#6EFFE1] px-3 py-1 rounded-full text-sm">MySQL</span>
+                    <span className="bg-[#6effe215] text-[#6EFFE1] px-3 py-1 rounded-full text-sm">Git</span>
+                    <span className="bg-[#6effe215] text-[#6EFFE1] px-3 py-1 rounded-full text-sm">WordPress</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

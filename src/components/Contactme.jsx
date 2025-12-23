@@ -20,7 +20,7 @@ export default function Contactme() {
         <div className="flex flex-col gap-4">
           {/* Download Resume Button */}
           <a
-            href="/portfolio-afifa/resume.pdf" // Replace with the actual path to your resume
+            href="/portfolio-afifa/AfifaArgoubResume.pdf" // Replace with the actual path to your resume
             download
             className="border border-[#6EFFE1] text-[#6EFFE1] py-2 px-6 rounded-lg hover:bg-[#6EFFE1] hover:text-black transition duration-300"
           >
