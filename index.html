@@ -1,19 +1,69 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/afifa.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Portfolio - Afifa Argoub</title>
-    <style>
-			body{
-				background-color: #011d38;
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/afifa.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Portfolio - Afifa Argoub</title>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+			.font-display {
+				font-family: "Poppins", sans-serif;
+			}
+			.font-body {
+				font-family: "Poppins", sans-serif;
+			}
+			@media (prefers-reduced-motion: reduce) {
+				* {
+					animation-duration: 0.001ms !important;
+					animation-iteration-count: 1 !important;
+					transition-duration: 0.001ms !important;
+				}
+			}
+			.cursor-blink::after {
+				content: "";
+				display: inline-block;
+				width: 8px;
+				height: 0.9em;
+				background: currentColor;
+				margin-left: 4px;
+				vertical-align: -2px;
+				animation: blink 1s step-end infinite;
+			}
+			@keyframes blink {
+				50% {
+					opacity: 0;
+				}
+			}
+			.grad-text {
+				background: linear-gradient(90deg, #db2777, #9333ea);
+				-webkit-background-clip: text;
+				background-clip: text;
+				color: transparent;
+			}
+			.glow-blob {
+				position: absolute;
+				border-radius: 9999px;
+				filter: blur(90px);
+				opacity: 0.35;
+				pointer-events: none;
+			}
+			.corner-frame {
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				border-color: rgb(219 39 119 / 0.6);
+				opacity: 0;
+				transition: opacity 0.2s ease;
+			}
+			.group:hover .corner-frame {
+				opacity: 1;
 			}
 		</style>
-  </head>
-  <body class="w-full">
-    <div class="px-4 py-2" id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+	</head>
+	<body class="w-full">
+		<div id="root"></div>
+		<script type="module" src="/src/main.jsx"></script>
+	</body>
 </html>

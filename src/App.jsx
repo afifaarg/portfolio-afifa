@@ -11,25 +11,19 @@ import Educationpath from "./components/Educationpath";
 import Projectssection from "./components/Projectssection";
 import Contactme from "./components/Contactme";
 export default function App() {
-  const [showHomePage, setShowHomePage] = useState(false);
+	const [showHomePage, setShowHomePage] = useState(false);
 
-  return (
-    <section>
-      {!showHomePage ? (
-        <Entryanimation setShowHomePage={setShowHomePage} /> //setShowHomePage is a function itself that set showHomePage to true or false.
-      ) : (
-        <section>
-          <Navbar />
-          <ContactSideBar />
-          <HelloSection />
-          <AboutMe />
-          <Projectssection />
-          <Experiencetimeline />
-          <Educationpath />
-          <Contactme />
-          <EmailSideBar />
-        </section>
-      )}
-    </section>
-  );
+	return (
+		<section>
+			<HelloSection />
+			<ContactSideBar />
+			{/* <Navbar />
+			<AboutMe />
+			<Projectssection />
+			<Experiencetimeline />
+			<Educationpath />
+			<Contactme />
+			<ContactSideBar /> */}
+		</section>
+	);
 }
