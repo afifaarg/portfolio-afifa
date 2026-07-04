@@ -2,16 +2,6 @@ import React, { useState, useEffect } from "react";
 
 export default function ContactSideBar() {
 	const [isOpen, setIsOpen] = useState(false);
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		const checkMobile = () => {
-			setIsMobile(window.innerWidth < 768);
-		};
-		checkMobile();
-		window.addEventListener("resize", checkMobile);
-		return () => window.removeEventListener("resize", checkMobile);
-	}, []);
 
 	const socialLinks = [
 		{
@@ -88,26 +78,11 @@ export default function ContactSideBar() {
 		},
 	];
 
-	if (!isMobile) {
-		return (
-			<div className='flex flex-col items-center fixed text-white left-8 bottom-0 space-y-4'>
-				{socialLinks.map((link, index) => (
-					<a key={index} href={link.href} className='group'>
-						{React.cloneElement(link.icon, {
-							className:
-								"transition-all duration-300 group-hover:translate-x-2 hover:fill-[#ec4899] hover:text-white",
-						})}
-					</a>
-				))}
-				<div className='w-px bg-white h-28' />
-			</div>
-		);
-	}
 	return (
 		<>
 			<button
 				onClick={() => setIsOpen(!isOpen)}
-				className='fixed bottom-6 right-6 z-50 bg-[#ec4899] text-black p-4 rounded-full shadow-lg hover:scale-110 transition-all duration-300 md:hidden'
+				className='fixed bottom-6 right-6 z-50 bg-[#ec4899] text-black p-4 rounded-full shadow-lg hover:scale-110 transition-all duration-300 '
 				aria-label='Toggle social links'
 			>
 				<svg
@@ -137,14 +112,14 @@ export default function ContactSideBar() {
 			{/* Overlay */}
 			{isOpen && (
 				<div
-					className='fixed inset-0 bg-black/50 z-40 md:hidden'
+					className='fixed inset-0 bg-black/50 z-40 '
 					onClick={() => setIsOpen(false)}
 				/>
 			)}
 
 			{/* Social Links Menu */}
 			<div
-				className={`fixed bottom-24 right-6 z-50 flex flex-col items-center space-y-4 md:hidden transition-all duration-300 transform ${
+				className={`fixed bottom-24 right-6 z-50 flex flex-col items-center space-y-4 transition-all duration-300 transform ${
 					isOpen
 						? "opacity-100 scale-100"
 						: "opacity-0 scale-0 pointer-events-none"
