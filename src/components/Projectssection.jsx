@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import SectionEyebrow from "../helpersComponents/SectionEyebrow";
 import { PROJECTS } from "../content/content";
 import TagChip from "../helpersComponents/TagChip";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, X } from "lucide-react";
 
 export default function Projects() {
 	const [activeProject, setActiveProject] = useState(null);
