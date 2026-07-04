@@ -88,7 +88,6 @@ export default function ContactSideBar() {
 		},
 	];
 
-	// Desktop version (same as original)
 	if (!isMobile) {
 		return (
 			<div className='flex flex-col items-center fixed text-white left-8 bottom-0 space-y-4'>
@@ -113,11 +112,11 @@ export default function ContactSideBar() {
 			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
-					fill='none'
+					fill='white'
 					viewBox='0 0 24 24'
 					strokeWidth={2}
 					stroke='currentColor'
-					className='w-6 h-6'
+					className='w-6 h-6 text-white'
 				>
 					{isOpen ? (
 						<path
