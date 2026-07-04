@@ -83,7 +83,7 @@ export default function ContactSideBar() {
 			<button
 				onClick={() => setIsOpen(!isOpen)}
 				className='fixed bottom-6 right-6 z-50 bg-[#ec4899] text-black p-4 rounded-full shadow-lg hover:scale-110 transition-all duration-300 '
-				aria-label='Toggle social links'
+				aria-label='Toggle social '
 			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
